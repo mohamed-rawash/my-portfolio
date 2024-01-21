@@ -23,7 +23,7 @@
   left: 0;
   top: 0;
   border-radius: 1.5rem;
-  transform: rotate(20deg);
+  transform: rotate(45deg);
   background-color: var(--container-color);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: 0.3s ease-in;
@@ -34,7 +34,7 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .about__img:hover::before {
-  transform: initial;
+  transform: rotate(90deg);
 }
 
 .about__info {
