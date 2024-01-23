@@ -63,7 +63,7 @@
   font-size: var(--tiny-font-size);
 }
 .about__description {
-  padding-right: 4rem;
+  padding-right: 1rem;
   margin-bottom: var(--mb-2);
 }
 /*=============== BREAKPOINTS ===============*/

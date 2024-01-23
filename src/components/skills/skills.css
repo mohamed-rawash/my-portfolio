@@ -61,6 +61,10 @@
 
 /* For small devices */
 @media screen and (max-width: 350px) {
+  .skills__container {
+    grid-template-columns: 310px;
+    row-gap: 2rem;
+  }
   .skills__content {
     padding: 2rem 0.2rem;
   }
