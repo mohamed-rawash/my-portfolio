@@ -80,15 +80,21 @@
   }
   .nav__close {
     position: absolute;
+    height: 40px;
+    width: 60px;
     right: 1.3rem;
     bottom: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--title-color);
+    background-color: transparent;
+    text-align: center;
+    color: #f00;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
   }
   .nav__close:hover {
-    color: rgba(255, 0, 0, 0.5);
-    transform: scale(1.2);
+    color: #fff;
+    background-color: #f00;
   }
   .nav__toggle {
     font-size: 1.2rem;

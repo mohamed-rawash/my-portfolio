@@ -1,4 +1,4 @@
-import React from "react";
+import {} from "react";
 import "./skills.css";
 import Frontend from "./Frontend";
 import Backend from "./Flutter";
