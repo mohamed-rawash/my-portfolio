@@ -4,25 +4,28 @@ const Social = () => {
   return (
     <div className="home__social">
       <a
+        rel="noreferrer"
         href="https://www.instagram.com/_mohamed_rawash/"
-        class="home__social-icon"
+        className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-instagram"></i>
+        <i className="uil uil-instagram"></i>
       </a>
       <a
+        rel="noreferrer"
         href="https://github.com/mohamed-rawash"
-        class="home__social-icon"
+        className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt"></i>
       </a>
       <a
+        rel="noreferrer"
         href="https://www.linkedin.com/in/mohamed-rawash-61b30a217/"
-        class="home__social-icon"
+        className="home__social-icon"
         target="_blank"
       >
-        <i class="uil uil-linkedin"></i>
+        <i className="uil uil-linkedin"></i>
       </a>
     </div>
   );

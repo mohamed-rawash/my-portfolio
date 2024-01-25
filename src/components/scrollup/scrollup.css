@@ -1,0 +1,30 @@
+.scrollup {
+  position: fixed;
+  bottom: -20%;
+  right: 2.5rem;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  opacity: 0.8;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+.scrollup:hover {
+  background-color: var(--title-color-dark);
+  opacity: 1;
+}
+.scrollup__icon {
+  font-size: 1.5rem;
+}
+.show-scroll {
+  bottom: 4rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 576px) {
+  .scrollup {
+    right: 1rem;
+    padding: 0.2rem 0.35rem;
+  }
+}

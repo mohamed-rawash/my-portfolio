@@ -2,8 +2,23 @@ import { useState } from "react";
 import "./Header.css";
 
 function Header() {
+  /*=============== Chanage Header Background ===============*/
+  window.addEventListener("scroll", function () {
+    const head = document.querySelector(".header");
+    if (this.scrollY >= 80) {
+      head.classList.add("scroll-header");
+    } else {
+      head.classList.remove("scroll-header");
+    }
+  });
   /*=============== Toggle Menu ===============*/
   const [Toggle, setToggle] = useState(false);
+  const [activeNav, setActiveNav] = useState("#home");
+
+  const navLinkHandler = (linkName) => {
+    setToggle(!Toggle);
+    setActiveNav(linkName);
+  };
 
   return (
     <header className="header">
@@ -13,36 +28,78 @@ function Header() {
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
-            <li onClick={() => setToggle(!Toggle)} className="nav__item">
-              <a href="#home" className="nav__link active-link">
+            <li onClick={() => navLinkHandler("#home")} className="nav__item">
+              <a
+                href="#home"
+                className={
+                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
+                }
+              >
                 <i className="uil uil-estate nav__icon"></i> Home
               </a>
             </li>
 
-            <li onClick={() => setToggle(!Toggle)} className="nav__item">
-              <a href="#about" className="nav__link">
+            <li onClick={() => navLinkHandler("#about")} className="nav__item">
+              <a
+                href="#about"
+                className={
+                  activeNav === "#about" ? "nav__link active-link" : "nav__link"
+                }
+              >
                 <i className="uil uil-user nav__icon"></i> About
               </a>
             </li>
 
-            <li onClick={() => setToggle(!Toggle)} className="nav__item">
-              <a href="#skills" className="nav__link">
+            <li onClick={() => navLinkHandler("#skills")} className="nav__item">
+              <a
+                href="#skills"
+                className={
+                  activeNav === "#skills"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
                 <i className="uil uil-file-alt nav__icon"></i> Skills
               </a>
             </li>
 
-            <li onClick={() => setToggle(!Toggle)} className="nav__item">
-              <a href="#services" className="nav__link">
+            <li
+              onClick={() => navLinkHandler("#services")}
+              className="nav__item"
+            >
+              <a
+                href="#services"
+                className={
+                  activeNav === "#services"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
                 <i className="uil uil-briefcase-alt nav__icon"></i> Services
               </a>
             </li>
 
-            <li onClick={() => setToggle(!Toggle)} className="nav__item">
-              <a href="#portfolio" className="nav__link">
+            <li
+              onClick={() => navLinkHandler("#portfolio")}
+              className="nav__item"
+            >
+              <a
+                href="#portfolio"
+                className={
+                  activeNav === "#portfolio"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
               </a>
             </li>
-            <li onClick={() => setToggle(!Toggle)} className="nav__item">
+            <li
+              onClick={() => navLinkHandler("#contact")}
+              className={
+                activeNav === "#contact" ? "nav__link active-link" : "nav__link"
+              }
+            >
               <a href="#contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i> Contact
               </a>

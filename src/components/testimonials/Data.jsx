@@ -20,6 +20,13 @@ export const Data = [
   },
   {
     id: 3,
+    image: clientOneIme,
+    title: "Abdulla Ma3la",
+    description:
+      "A really good job, all aspects of the project were followed step by step and with good results.",
+  },
+  {
+    id: 4,
     image: clientThreeIme,
     title: "Mohamed Rawash",
     description:
