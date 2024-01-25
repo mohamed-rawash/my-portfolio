@@ -23,9 +23,8 @@
   margin-right: var(--mb-0-25);
   transition: 0.3s;
 }
-.qualification__active {
-  position: relative;
-  color: var(--title-color-dark);
+.qualification__button:hover .qualification__icon {
+  color: #c147e9;
 }
 .qualification__button::after {
   content: "";
@@ -36,6 +35,10 @@
   height: 3px;
   transition: 0.3s;
   background: linear-gradient(90deg, #c147e9, rgba(255, 166, 0, 0));
+}
+.qualification__active {
+  position: relative;
+  color: var(--title-color-dark);
 }
 .qualification__active::after {
   width: 80%;

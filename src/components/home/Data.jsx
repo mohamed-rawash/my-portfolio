@@ -2,8 +2,8 @@ import {} from "react";
 
 const Data = () => {
   return (
-    <div class="home__data">
-      <h1 class="home__title">
+    <div className="home__data">
+      <h1 className="home__title">
         Mohamed Rawash{" "}
         <svg
           width="36"
@@ -11,7 +11,7 @@ const Data = () => {
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="home__hand"
+          className="home__hand"
         >
           <path
             d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
@@ -55,15 +55,15 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 class="home_subtitle">Flutter&Front-End Developer</h3>
-      <p class="home__description">
+      <h3 className="home_subtitle">Flutter&Front-End Developer</h3>
+      <p className="home__description">
         Passionate Developer with expertise in creating responsive and visually
         appealing web and mobile applications.
       </p>
-      <a href="#contact" class="button button--flex">
+      <a href="#contact" className="button button--flex">
         Say Hello
         <svg
-          class="button__icon"
+          className="button__icon"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
