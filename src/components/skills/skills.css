@@ -60,7 +60,7 @@
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 576px) {
   .skills__container {
     grid-template-columns: 310px;
     row-gap: 2rem;
