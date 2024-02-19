@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
+import logo from "../../assets/logo-no-background.png";
 
 function Header() {
   /*=============== Chanage Header Background ===============*/
@@ -24,7 +25,7 @@ function Header() {
     <header className="header">
       <nav className="nav container">
         <a href="../../../index.html" className="nav__logo">
-          <h1>Rawash</h1>
+          <img src={logo} alt="rawash logo image" />
         </a>
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">

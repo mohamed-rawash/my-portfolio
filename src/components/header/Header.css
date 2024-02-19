@@ -18,6 +18,9 @@
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+.nav__logo img {
+  max-width: 150px;
+}
 .nav__list {
   display: flex;
   align-items: center;
