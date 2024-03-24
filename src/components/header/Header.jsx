@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
-import logo from "../../assets/logo-no-background.png";
+import logo from "../../assets/logo.png";
 
 function Header() {
   /*=============== Chanage Header Background ===============*/

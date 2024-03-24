@@ -1,3 +1,8 @@
+.home {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
 .home__container {
   row-gap: 8rem;
 }
@@ -55,7 +60,7 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 20%);
   order: 1;
   justify-self: center;
   width: 300px;
@@ -70,9 +75,15 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #c147e9;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   z-index: -1;
   border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   animation: profile-before-animation 8s ease-in-out infinite 2s alternate;
 }
 .home__scroll {

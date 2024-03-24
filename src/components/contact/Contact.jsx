@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
   const form = useRef();
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isFailure, setIsFailure] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,9 +20,17 @@ const Contact = () => {
       .then(
         () => {
           e.target.reset();
+          setIsSuccess(true);
+          setTimeout(() => {
+            setIsSuccess(false);
+          }, 2000);
         },
         (error) => {
           console.log(error.text);
+          setIsFailure(true);
+          setTimeout(() => {
+            setIsFailure(false);
+          }, 2000);
         }
       );
   };
@@ -132,6 +142,15 @@ const Contact = () => {
                 ></path>
               </svg>
             </button>
+
+            <div className={`alert-success ${isSuccess ? "show-alert" : ""}`}>
+              Thank you for contacting us. We will respond to you as soon as
+              possible
+            </div>
+
+            <div className={`alert-failure ${isFailure ? "show-alert" : ""}`}>
+              Please try again
+            </div>
           </form>
         </div>
       </div>
